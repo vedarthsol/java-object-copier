@@ -14,9 +14,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class OrderCopyClientTest {
 
-    public static final String ORDER_ID = UUID.randomUUID().toString();
-    public static final String ORDER_DESCRIPTION = "My Original Order";
-    public static final String LINE_1_DESCRIPTION = "line 1";
+    private static final String ORDER_ID = UUID.randomUUID().toString();
+    private static final String ORDER_DESCRIPTION = "My Original Order";
+    private static final String LINE_1_DESCRIPTION = "line 1";
 
     private OrderCopyClient client;
 
