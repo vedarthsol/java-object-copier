@@ -19,10 +19,10 @@ This involves recursively copying all referenced objects, creating a completely 
 # Running the Examples
 
 * Compile the code: javac *.java
-* Run the examples:
+* Run the Tests:
   * Demonstrates Shallow copy
-    ```OrderCopyClientTest.shouldPerformShallowCopyOverwritesLine1Description```
+    ```OrderCopyTest.shouldModifyOriginalOrderWhenShallowCopyingOrder```
   * Demonstrates Deep copy
-    ```OrderCopyClientTest.shouldPerformDeepCopyRetainingOriginalOrderIntact```
+    ```OrderCopyTest.shouldRetainingOriginalOrderWhenDeepCopyingOrder```
 
 # Thank you!
