@@ -1,7 +1,6 @@
 package org.ordermanagement.copy.demo.models;
 
-
-public class OrderLine {
+public class OrderLine implements Cloneable {
     private String description;
     private int quantity;
 
@@ -27,11 +26,8 @@ public class OrderLine {
     }
 
     @Override
-    public String toString() {
-        return "OrderLine{" +
-                "description='" + description + '\'' +
-                ", quantity=" + quantity +
-                '}';
+    public OrderLine clone() throws CloneNotSupportedException {
+        return (OrderLine) super.clone();
     }
 
 }
